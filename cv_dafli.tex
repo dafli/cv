@@ -44,6 +44,13 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{calc}
+\usepackage{xcolor}
+\usepackage{float}
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -54,7 +61,25 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge Youness \textsc{DAFLI}}\bigskip\par} % Your name
+\par{
+\begin{figure}
+\centering
+\makebox[\textwidth][c]{
+\begin{subfigure}{.5\textwidth}
+  
+  {\Huge Youness \textsc{DAFLI}}
+\end{subfigure}%
+
+\begin{subfigure}{.5\textwidth}
+  \hspace{120pt}
+  \includegraphics[scale=0.25]{photo.jpg}
+\end{subfigure}
+}
+\end{figure}
+
+
+%\centering  \bigskip\par} % Your name
+}
 
 \section{Données personnelles}
 
@@ -81,11 +106,11 @@
 \begin{tabular}{r|p{11cm}}	
 \textsc {2013-2014} & 
 1\textsuperscript{ère} année, filière d'ingénieur en ``Génie logiciel et système d'informatique distribués''
-\textbf{à l'École Normale Supérieure de l'Enseignement Technique (EST)}\\ \multicolumn{2}{c}{} \\
+\textbf{à l'École Normale Supérieure de l'Enseignement Technique (ENSET)}\\ \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{2013} & Diplôme universitaire de technologie en `` Génie logiciel/Réseau'' \textbf{à l'École  Supérieure de Technologie ,Essaouira (ENSET)}.\\ \multicolumn{2}{c}{} \\
+\textsc{2013} & Diplôme universitaire de technologie en `` Génie logiciel/Réseau'' \textbf{à l'École  Supérieure de Technologie ,Essaouira (EST)}.\\ \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
@@ -101,12 +126,12 @@
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
 
-\section{Connaissance professionnelles}
+\section{Connaissances professionnelles}
 
 \begin{tabular}{rl}
 \textsc{Programmation} & C, C++, JAVA ,PHP, Android, Assembleur \\
 
-\textsc{Développement web} & HTML, XML, CSS,J avaScript \\
+\textsc{Développement web} & HTML, XML, CSS, JavaScript \\
 
 \textsc{Réseau} & Routage et adressage IP \\
 \textsc{Systèmes d'exploitation} & Linux, Windows \\ 
@@ -119,7 +144,7 @@
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Stage}
+\section{Stages}
 
 \begin{tabular}{r|p{11cm}}
 
@@ -153,7 +178,7 @@
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Centre d'intérêt }
+\section{Centres d'intérêts }
 
 Musique, Lecture, cinéma, Football \\
 
